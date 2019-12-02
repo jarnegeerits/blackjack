@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/blackjack.css">
+        <script src="js/blackjackV2.js"></script>
+        <title>Blackjack</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row divide">
+                <div class="col-sm-2 rand blokjes">
+                    <div class="card">
+                        <div class="card-body" id="creditDisplay">
+                            Credits:
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard0" height="132px" width="86px">
+                </div>
+                <div class="col-sm-4 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard1" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <div class="card">
+                        <div class="card-body" id="dealerWeight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row divide">
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard2" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard3" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard4" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard5" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard6" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="dealercard7" height="132px" width="86px">
+                </div>
+            </div>
+            <div class="row divide">
+                <div class="col-sm-12">
+                </div>
+            </div>
+<!--        <div class="row divide">
+                <div class="col-sm-12">
+                </div>
+            </div>
+-->
+            <div class="row divide">
+                <div class="col-sm-2 rand blokjes">
+
+                </div>
+                <div class="col-sm-4 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard0" height="132px" width="86px">
+                </div>
+                <div class="col-sm-4 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard1" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <div class="card">
+                        <div class="card-body" id="playerWeight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row divide">
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard2" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard3" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard4" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard5" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard6" height="132px" width="86px">
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <img src="media/cards/Gray_back.jpg" id="playercard7" height="132px" width="86px">
+                </div>
+            </div>
+            <div class="row divide">
+                <!--<div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnCreate" onclick="createDeck()" class="btn btn-danger btn-block">Build deck</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnShuffle" onclick="shuffle()" class="btn btn-warning btn-block">Shuffle the deck</button>
+                </div>-->
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnDeal"  onclick="deal()" class="btn btn-primary btn-block">Deal some cards</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnCall" onclick="call()" class="btn btn-success btn-block">Hit me</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btndoubleDown" onclick="call()"class="btn btn-danger btn-block">Double down!</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnPass" onclick="pass()" class="btn btn-secondary btn-block">Pass</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+                    <button type="button" id="btnAgain" onclick="nextRound()" class="btn btn-dark btn-block">Next round</button>
+                </div>
+                <div class="col-sm-2 rand blokjes">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
